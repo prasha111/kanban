@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Box({data}) {
+function Box({data, onDrag}) {
   return (
-    <div draggable={true} className='box'>{data}</div>
+    <div id={data} draggable={true} onDrag={onDrag} className='box'>{data}</div>
   )
 }
 
